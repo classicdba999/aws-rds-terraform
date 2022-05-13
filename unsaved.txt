@@ -1,0 +1,16 @@
+aws_rds_cluster-cluster_identifier                              = "fish-datastore-dev"
+aws_rds_cluster-deletion_protection                             = false
+aws_rds_cluster-availability_zones                              = [ "eu-west-1a" ]
+aws_rds_cluster-backup_retention_period                         = 7
+aws_rds_cluster_instance-monitoring_interval                    = 0
+aws_rds_cluster_instance-performance_insights_enabled           = false
+aws_rds_cluster_instance-performance_insights_kms_key_id        = null
+aws_rds_cluster_instance-performance_insights_retention_period  = 7
+aws_rds_cluster_instance-ca_cert_identifier                     = null
+aws_rds_cluster-serverlessv2_scaling_configuration              = {
+                                                                    max_capacity = 1
+                                                                    min_capacity = 0.5
+                                                                  }
+tags                                                            = {
+
+                                                                  }
